@@ -1,0 +1,20 @@
+.row{
+    margin:auto;
+    padding:1rem;
+    height: 500px;
+    width: 500px;
+}   
+
+#display{
+display:block;
+height: 150px;
+width: 100%;
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.background-image{
+    background-image: url(https://images5.alphacoders.com/956/thumb-1920-956578.jpg);
+}
