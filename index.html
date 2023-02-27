@@ -7,13 +7,18 @@
     <title>Animal Crossing Tic Tac Toe Game</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <!--X icon for tic tac toe-->
+    <span class="bi bi-x"></span>
+    <!--O icon for tic tac toe-->
+    <span class="bi bi-o"></span>
 </head>
 <!--Add a background so Tic Tac Toe isn't boring. And also animal crossing is awesome-->
 <body class="background-image">
    <!--make a header for the game-->
     <h1 class="text-center">Tic-Tac-Toe</h1>
     <!--create a grid systematically-->
-    <div class="container">
+    <div class="container-fluid">
+        <!--figure out how to make game tiles responsive-->
         <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3">
           <div class="col">
             <div class="p-3 border bg-light" id="display"></div>
