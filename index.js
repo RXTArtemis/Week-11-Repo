@@ -8,7 +8,15 @@ let winner = true;
 let gameOver = false; 
 
 //invoke all functions to create game logic
-    //press start button
+//press start button
+
+//code that invokes all game functions
+
+
+
+
+
+
 
 //switch turns in between players-create a function
 
@@ -24,20 +32,31 @@ for(let i = 0; i < 9; i++){
             boxMarker(playerX);
             //update the board-function to update the board
             updateBoard();
+            chooseWinner(){
+                if(playerX ===true && winner === true){
+            } console.log("Winner is player X!");
+    
         //ask if updateBoard should be inside loop or outside loop   
         //first condition is false to switch players and second condition is true for playerO to play their turn
-        }else(currentPlayer!=playerX && gameOver === false){
+        }else if(currentPlayer!=playerX && gameOver === false){
             //player O's turn
             //switch players if the first if condition is not met
             currentPlayer = playerO;
             boxMarker(playerO);
             updateBoard();
-        }
-    } //check if there is a winner every round/turn
-    chooseWinner();
+            //is this correct being here or do I add to the choose winner function or see if you should add to game play 
+            chooseWinner(){
+                if(playerO ===true && winner === true){
+            } console.log("Winner is player O!");
+    
+                    }
+                } //check if there is a winner every round/turn
+            } 
 
+         }
+    }
 }
-}
+
 //function to mark box and individual cell
 function boxMarker(){
 //add marker to every clickable cell and bring icons to JS
