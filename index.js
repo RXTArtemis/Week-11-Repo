@@ -2,18 +2,20 @@
 let board=[[0,1,2]];
           [[0,1,2]];
           [[0,1,2]];  //array to push conditions into
-let playerO = img2; //player O
-let playerX = img; //player X
+
+
 
 //for individual icon markers
 let img=document.createElement("img");
-img src="https://mir-s3-cdn-cf.behance.net/projects/404/ba0765162472679.63d6958e81afc.jpg";
+imgSource="https://mir-s3-cdn-cf.behance.net/projects/404/ba0765162472679.63d6958e81afc.jpg";
 document.body.appendChild(img);
+let playerX = img; //player X
+
 
 let img2=document.createElement("img");
-img2 src="https://64.media.tumblr.com/a135905d66c9fa3a969da082dbdb812f/fb42c1baa3d2d89e-5c/s400x600/57210f3bc2dc8f7a627dd27f4dd667e6ae94fd28.png ";
-document.body.appendChild("img");
-
+img2Source="https://64.media.tumblr.com/a135905d66c9fa3a969da082dbdb812f/fb42c1baa3d2d89e-5c/s400x600/57210f3bc2dc8f7a627dd27f4dd667e6ae94fd28.png ";
+document.body.appendChild(img);
+let playerO = img2; //player O
 
 let currentPlayer = playerX; //start with player x
 //boolean value that will switch once the conditions are complete
@@ -39,10 +41,6 @@ let case7=document.getElementById("case7");
 let case8=document.getElementById("case8");
 let case9=document.getElementById("case9");
 
-//press start button
-document.getElementById('start').addEventListener('click',()=>{
-//ask about which function to put here to start the game
-});
 
 
 
