@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="stylesheet.css">
     <!--X icon for tic tac toe-->
-    <span class="bi bi-x"></span>
-    <!--O icon for tic tac toe-->
-    <span class="bi bi-o"></span>
+    
 </head>
 <!--Add a background so Tic Tac Toe isn't boring. And also animal crossing is awesome-->
 <body class="background-image">
@@ -19,62 +17,71 @@
     <!--create a grid systematically-->
     <div class="container-fluid">
         <!--figure out how to make game tiles responsive-->
-        <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3">
+        <div class="row row-cols-3 row-cols-lg g-2 g-lg-3">
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light" id="display"></div>
+            <div class="cell p-3 border bg-light" id="display"></div>
           </div>
         </div>
       </div>
 <!--create a table to define individual boxes and add individual ID to boxes-->
-    <table>
-    <tr>
-        <td id = "case1" onclick="col('case1')"></td>
-        <td id = "case2" onclick="col('case2')"></td>
-        <td id = "case3" onclick="col('case3')"></td>
-    </tr>
-    <tr>
-        <td id = "case4" onclick="col('case4')"></td>
-        <td id = "case5" onclick="col('case5')"></td>
-        <td id = "case6" onclick="col('case6')"></td>
-    </tr>
-    <tr>
-        <td id = "case7" onclick="col('case7')"></td>
-        <td id = "case8" onclick="col('case8')"></td>
-        <td id = "case9" onclick="col('case9')"></td>
-    </tr>
-</table>
+  <div class="cell" id="cells">
+    <table class="case" id="case">
+        <tr>
+            <td id = "case1" onclick="col('case1')"></td>
+            <td id = "case2" onclick="col('case2')"></td>
+            <td id = "case3" onclick="col('case3')"></td>
+        </tr>
+        <tr>
+            <td id = "case4" onclick="col('case4')"></td>
+            <td id = "case5" onclick="col('case5')"></td>
+            <td id = "case6" onclick="col('case6')"></td>
+        </tr>
+        <tr>
+            <td id = "case7" onclick="col('case7')"></td>
+            <td id = "case8" onclick="col('case8')"></td>
+            <td id = "case9" onclick="col('case9')"></td>
+        </tr>
+    </table>
+  </div>  
+
 
 <!--Button to start and reset game-->
 <div class="text-center">
-    <button type="button" class="btn btn-primary">Start</button>
-    <button type="button" class="btn btn-danger">Reset Game</button>
+    <button type="button" class="btn btn-danger" id="Restart">Restart Game</button>
 </div>
+<br>
 
-
+<div class="winning-message" id="winningMessage">
+    <div id="winningMessageText"></div>
+<!--declare a winner using Bootstrap with Alert-->
+<div class="text-center alert alert-success" role="alert" id="style">
+    Winner is:
+  </div> 
+</div>
     <script src="index.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
