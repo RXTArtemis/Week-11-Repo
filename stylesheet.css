@@ -6,16 +6,13 @@
     display: flex;
 }   
 
-/* image2{
-src:url("https://64.media.tumblr.com/a135905d66c9fa3a969da082dbdb812f/fb42c1baa3d2d89e-5c/s400x600/57210f3bc2dc8f7a627dd27f4dd667e6ae94fd28.png");
-height: 450px;
-display: inline-block;
-}
-
-image{
-    src: url("https://mir-s3-cdn-cf.behance.net/projects/404/ba0765162472679.63d6958e81afc.jpg");
-    height: 450px;
-    display: inline-block;
+/* #cell.cellX-background-image::before,
+cell.cellX-background-image::after{
+    content: " ";
+    width: calc((row) * .15);
+    height:(row);
+    justify-content: center;
+    
 } */
 #display{
 display:block;
